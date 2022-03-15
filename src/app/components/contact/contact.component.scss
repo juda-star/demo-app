@@ -1,0 +1,76 @@
+@import "../../styles/vars";
+
+.contact {
+  &__info {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+        @media screen and(max-width:1600px) {
+            font-size: 1.3rem;
+        }
+        a{
+            text-decoration: none;
+            color: #171717;
+        }
+        span {
+          color: $main-color;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          background: #e6e6e6;
+          text-align: center;
+          line-height: 2;
+          font-size: 1.5rem;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  ::ng-deep{
+  mat-form-field{
+      width: 100%;
+  }
+  }
+  
+  &__form{
+      button{
+          background: $main-color;
+      }
+  }
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form-body {
+  height: fit-content;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

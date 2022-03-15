@@ -1,0 +1,12 @@
+.app{
+    &__header{
+        overflow: hidden;
+    }
+    main{
+        position: relative;
+        margin-left: 300px;
+        @media screen and (max-width:991px) {
+            margin-left: 0;
+        }
+    }
+}
