@@ -1,7 +1,8 @@
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 const app = express();
-app.use(express.static(path.dirname + '/dist/resume-angular'));
-app.get('/*', function(req,res)
-{res.sendFile(path.join(path.dirname+'/dist/resume-angular/index.html'));});
+app.use(express.static("./dist/resume-angular"));
+app.get("/*", function (req, res) {
+    res.sendFile('index.html', {root: 'dist/resume-angular/'})
+});
 app.listen(process.env.PORT || 8080);
